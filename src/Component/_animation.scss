@@ -1,0 +1,108 @@
+@import "../styles/Sub-Styles/color";
+@import "../styles/Sub-Styles/mixins";
+
+
+
+.tr {
+    .ani_wrppper {
+
+        .outerIMG {
+            margin-right: 200px;
+        }
+    }
+}
+
+.outerIMG {
+    animation-name: circel_ani;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    // animation-duration: 4s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    
+}
+
+.innerIMG {
+    animation-name: circel_ani_inner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    // animation-duration: 4s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+   
+}
+
+.grd{
+    filter: contrast(150%);
+    overflow: hidden;
+    // background-image: linear-gradient(0deg, rgba(157, 18, 93,0.6) 0%, rgba(59, 34, 194,0.6) 40%, rgba(22, 7, 91, 0.6)65%, rgba(0, 0, 0,0.3)100% );
+}
+
+
+@keyframes circel_ani {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(5deg)
+    }
+
+    75% {
+        transform: rotate(-5deg)
+    }
+
+    100% {
+        transform: rotate(5deg)
+    }
+}
+
+@keyframes circel_ani_inner {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg)
+    }
+
+    50% {
+        transform: rotate(-5deg)
+    }
+
+    75% {
+        transform: rotate(5deg)
+    }
+
+    100% {
+        transform: rotate(-5deg)
+    }
+}
+
+
+
+
+
+//   .animate {
+//     animation-name: animation_BG;
+//     animation-duration: 4s;
+//     animation-iteration-count: infinite;
+//     overflow: hidden;
+// }
+
+// @keyframes animate {
+//     0%   {transform: rotate(20deg);}
+//     25%  {transform: rotate(40deg)}
+//     50%  {transform: rotate(-20deg)}
+//     75%  {transform: rotate(0deg)}
+//     100% {transform: rotate(20deg)}
+//     // 50% {transform: rotate(180deg);}
+//   }

@@ -1,0 +1,30 @@
+@import "../styles/Sub-Styles/color";
+@import "../styles/Sub-Styles/mixins";
+
+.Copy-right {
+    color: $border_color;
+
+    .tittle {
+        margin-bottom: 24px;
+        font-weight: 600;
+        color: $text2color;
+        font-size: 24px;
+    }
+
+   
+}
+
+.terms_use_cookies {
+    .terms_use_cookies_ul {
+        background-color: $bgcolor;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $border_color;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}

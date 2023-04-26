@@ -1,0 +1,90 @@
+@import './color';
+@import './mixins';
+
+
+
+.page_des{
+    font-size: 18px;
+    // text-align: center;
+    margin: 0 auto;
+    padding-top:30px ;
+    font-weight: 100;
+}
+
+
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 12px;
+    font-weight: 300;
+}
+
+th{
+    background-color: $headcolor;
+}
+
+th ,td {
+    font-size: 14px;
+}
+
+tr:nth-child(odd){
+    background-color: $oddColor;
+}
+
+tr:nth-child(even){
+    background-color: $evenColor;
+}  
+
+.table_arrow{
+    transform: rotate(30deg);
+    margin-left:12px;
+    font-weight:100;
+}
+
+.FNQ{
+    li{
+        color: $textcolor;
+        font-size: large;
+        background-color: $sec-bgcolor;
+        margin: 25px 0px;
+        padding: 15px 10px;
+        width: 100%;
+        @include border-radius(10px);
+    }
+}
+
+.Page_4{
+    background-color:$bgcolor;
+    color:$textcolor;
+}
+
+.page4_head{
+    font-size: 48px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.answer{
+    display: none;
+    font-size: 12px;
+}
+
+.Question:hover .answer {
+    display: block;
+    transform:  all .8s ease-in-out ;
+}
+
+@media only screen and (max-width: 479px) and (min-width:320px){
+    .page4_head{font-size: 36px; padding-top: 30px;}
+    .page_des{width: 100%;}
+
+    th ,td {
+        font-size: 9px;
+    }
+    table, th, td {
+        border-collapse: collapse;
+        padding: 6px;
+        font-weight: 300;
+    }
+}
+

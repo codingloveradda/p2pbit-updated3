@@ -1,0 +1,362 @@
+@import "../styles/Sub-Styles/color";
+@import "../styles/Sub-Styles/mixins";
+
+.gradint-one::after{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right, #FF8800,   #ef6502 );
+}
+
+.gradint-one::before{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, #ef6502 , rgb(255, 0, 0));
+}
+
+
+.gradint-two::after{
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(225, 0, 0), rgb(255, 0, 204));
+}
+
+.gradint-two::before{
+  content: "";
+  position: absolute;
+  top:  47%;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(187, 0, 255), rgb(168, 5, 228));
+}
+
+.gradint-three::after{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(143, 3, 194),   rgb(152, 80, 179) );
+}
+
+.gradint-three::before{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(152, 80, 179) , rgb(179, 80, 171));
+}
+
+.gradint-four::after{
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(179, 80, 171), rgb(182, 112, 176));
+}
+
+.gradint-four::before{
+  content: "";
+  position: absolute;
+  top:  47%;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(182, 112, 176), rgb(204, 55, 224));
+}
+
+.gradint-five::after{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(154, 55, 224),   rgb(161, 21, 212) );
+}
+
+.gradint-five::before{
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(111, 80, 179) , rgb(83, 66, 217));
+}
+
+.gradint-six::after{
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 0%;
+  width: 160px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(66, 45, 230), rgb(42, 35, 173));
+}
+
+.gradint-six::before{
+  content: "";
+  position: absolute;
+  top:  47%;
+  right: -15.5%;
+  width: 275px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(42, 35, 173), rgb(42, 35, 173));
+}
+
+
+@media (min-width: 320px){
+  .targets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: $sec-bgcolor;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+  }
+
+  .item {
+    height: 500px;
+    width: auto;
+    color: white;
+  }
+
+  .step1::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .step2::after {
+    content: "";
+    position: absolute;
+    bottom: 52px;
+    left: 6.5%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+}
+
+@media (min-width: 360px){
+  .targets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: $sec-bgcolor;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+  }
+
+  .item {
+    height: 500px;
+    width: auto;
+    color: white;
+  }
+
+  .step1::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 11%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .step2::after {
+    content: "";
+    position: absolute;
+    bottom: 52px;
+    left: 11%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+}
+
+@media (min-width: 480px) {
+  .targets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: $sec-bgcolor;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+  }
+
+  .item {
+    height: 500px;
+    width: auto;
+    color: white;
+  }
+
+  .step1::after {
+    content: "";
+    position: absolute;
+    top: 41px;
+    left: 25%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .step2::after {
+    content: "";
+    position: absolute;
+    bottom: 53px;
+    left: 25%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+}
+
+
+
+@media (min-width: 600px) {
+  .targets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: $sec-bgcolor;
+
+    p {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+  }
+
+  .item {
+    height: 500px;
+    width: auto;
+    color: white;
+  }
+
+
+
+  .step1::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 29.5%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .step2::after {
+    content: "";
+    position: absolute;
+    bottom: 33px;
+    left: 30%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+}
+
+@media (min-width: 768px){
+  .step1::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 32%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .step2::after {
+    content: "";
+    position: absolute;
+    bottom: 33px;
+    left: 32%;
+    width: 120px;
+    height: 1px;
+    background-color: $text2color;
+    transform: rotate(90deg);
+  }
+
+  .targets{
+    .step1{
+      font-size: 36px;
+    }
+
+    .step2{
+      font-size: 36px;
+    }
+  }
+}
+
+.icon{
+  color: aliceblue;
+  font-size: 18px;
+}
+
+
+

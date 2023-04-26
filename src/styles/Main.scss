@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@300&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+@import "../styles/Sub-Styles/navbar";
+@import "../Component/footer";
+@import "./Sub-Styles/color";
+@import "./Sub-Styles/mixins";
+@import "../styles/Sub-Styles/page_1";
+@import "../styles/Sub-Styles/page_2";
+@import "../styles/Sub-Styles/page_3";
+@import "../styles/Sub-Styles/page_4";
+@import "../styles/Sub-Styles/page_5";
+@import "../styles/Sub-Styles/page_6";
+@import "../styles/Sub-Styles/page_7";
+@import "../Component/slider";
+@import "../Component/Header/navl";
+@import "../Component/animation";

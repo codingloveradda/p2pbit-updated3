@@ -1,0 +1,360 @@
+@import './color';
+@import './mixins';
+
+.Page_6 {
+    background-color: $bgcolor;
+}
+
+.body_heading {
+    @include heading(36px);
+}
+
+.connect_wallet {
+    @include heading(18px);
+}
+
+.swap {
+    box-shadow: rgba(74, 72, 72, 0.557) 0px 1px 0px;
+}
+
+.the{
+    border: 1px solid red;
+}
+
+.swap_other {
+    border-radius: 50px 0px 0px 50px;
+    padding: 12px 49px;
+    background-color: $blue_button_color;
+    @include heading(larger);
+    @include borders(1px, $blue_button_color);
+}
+
+.swap_other:hover {
+    background-color: $bgcolor;
+    transition: .5s;
+    color: $blue_button_color;
+    @include borders(1px, $blue_button_color);
+
+
+}
+
+.Matic_P2P {
+    border-radius: 0px 50px 50px 0px;
+    padding: 12px 28px;
+    @include heading(larger);
+    color: $blue_button_color;
+    @include borders(1px, $blue_button_color);
+}
+
+.Matic_P2P:hover {
+    background-color: $blue_button_color;
+    color: white;
+    transition: .5s;
+
+}
+
+.swap_meter {
+    background-color: $sec-bgcolor;
+    @include border-radius(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swap_setting {
+    color: $textcolor;
+}
+
+.exchange {
+    @extend .swap_setting;
+    font-size: 30px;
+    padding: 3px;
+    @include borders(2px, $sec-bgcolor);
+    background-color: $bgcolor;
+    @include border-radius(8px);
+}
+
+.currency_input {
+    background-color: $input_color;
+    border-radius: 50px 0px 0px 50px;
+    padding: 14px;
+    color: $textcolor;
+
+}
+
+.Select_currency {
+    color: $textcolor;
+    background-color: $input_color;
+    border-radius: 0px 50px 50px 0px;
+    padding: 14px 20px 14px 20px;
+    border-left: 1px solid $border_color;
+    margin-left: -5px;
+    display: flex;
+    .select_input{
+        color: $textcolor;
+        background-color: $input_color;
+        padding: 0px 20px 0px 0px;
+        border: none;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 50px 50px 0px;
+    }
+}
+
+.btn_swap {
+    color: $textcolor;
+    margin-top: 50px;
+    border-radius: 30px;
+    background-color: $blue_button_color;
+
+    Link {
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.btn_swap:hover {
+    background-color: $textcolor;
+    color: $blue_button_color;
+    transition: .7s;
+}
+
+
+
+.gear_setting {
+    display: none;
+}
+
+#gear_set:checked~.gear_setting {
+    display: block;
+}
+
+
+
+
+.analytic_hover:hover .analytic{
+    display: block;
+    display: flex;
+}
+
+.analytic{
+    display: none;
+    background-color: $sec-bgcolor;
+}
+
+
+.swap_setting_hover {
+    background-color: $sec-bgcolor;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px #000000;
+    text-align: left;
+
+    .setting_head {
+        box-shadow: rgba(74, 72, 72, 0.557) 0px 1px 0px, ;
+        padding: 20px;
+    }
+
+    .Slippage_info {
+        box-shadow: rgba(74, 72, 72, 0.557) 0px 1px 0px, rgba(74, 72, 72, 0.557) 0px 1px 0px inset;
+        padding: 20px
+    }
+
+    .interface_setting {
+        padding: 20px;
+
+    }
+
+    .swap_persentage {
+        background-color: $input_color;
+        border-radius: 25px;
+
+
+        .swap_hover_input {
+            background-color: $input_color;
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) and (min-width:480px) {
+    .swap_meter {
+        margin: 52px 30px;
+    }
+
+    .body_heading {
+        @include heading(28px);
+    }
+
+    .connect_wallet {
+        @include heading(16px);
+    }
+
+}
+
+@media only screen and (max-width: 479px) and (min-width:320px) {
+    .break {
+        display: flex;
+        justify-content: center;
+    }
+
+    .currency_input {
+        padding: 8px;
+        font-size: small;
+    }
+
+    .Select_currency {
+        padding: 0px 0px
+    }
+
+    .swap_meter {
+        margin: 44px 10px;
+    }
+
+    .exchange {
+        font-size: 18px;
+        padding: 2px 3px;
+    }
+
+    .swap_other {
+        @include heading(small);
+        padding: 10px 30px;
+    }
+
+    .body_heading {
+        @include heading(20px)
+    }
+
+    ;
+
+    .Matic_P2P {
+        @include heading(small);
+        padding: 10px 22px;
+    }
+
+    .connect_wallet {
+        @include heading(14px)
+    }
+
+    ;
+}
+
+
+.toggle_one {
+
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 70px;
+        height: 40px;
+        // background: $input_color;
+        background: $sec-bgcolor;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        border: 1px solid $input_color;
+    }
+
+    label:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        width: 38px;
+        height: 38px;
+        background: $blue_button_color;
+        // background: $sec-bgcolor;
+        border-radius: 90px;
+        transition: 0.3s;
+        border: 1px solid $input_color;
+    }
+
+    input:checked+label {
+        background: $sec-bgcolor;
+    }
+
+    input:checked+label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 40px;
+    }
+
+    // centering
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+}
+
+.toggle_two {
+
+    input[type=checkbox] {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 70px;
+        height: 40px;
+        // background: $input_color;
+        background: $sec-bgcolor;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+        border: 1px solid $input_color;
+    }
+
+    label:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 5px;
+        width: 38px;
+        height: 38px;
+        background: $blue_button_color;
+        // background: $sec-bgcolor;
+        border-radius: 90px;
+        transition: 0.3s;
+        border: 1px solid $input_color;
+    }
+
+    input:checked+label {
+        background: $sec-bgcolor;
+    }
+
+    input:checked+label:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+
+    label:active:after {
+        width: 40px;
+    }
+
+    // centering
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+}

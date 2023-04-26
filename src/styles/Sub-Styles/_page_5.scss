@@ -1,0 +1,23 @@
+.crossmark_section{
+    position: relative;
+    @include borders_bottem(1px, #707070);
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.crossmark{
+    position: absolute;
+    top:40px;
+    right:40px;
+}
+
+.hi{
+    font-size: 24px;
+    font-weight: 800;
+
+}
+
+table, th, tr, td{
+    @include borders(1px, #2c2a2a);
+}
+

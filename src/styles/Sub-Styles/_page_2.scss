@@ -1,0 +1,31 @@
+body{
+    background-color: $bgcolor;
+    color:$textcolor;
+}
+
+.white_paper{
+    @include borders_bottem(1px, rgba(199, 208, 219,0.3));
+    @include heading(36px)
+}
+
+.side_bar{
+    @include borders_right(1px,rgba(199, 208, 219,0.3));
+}
+
+.right_bar{
+    @include borders_left(1px,rgba(199, 208, 219,0.3));
+    font-size: 18px;
+}
+
+.side_bar_menu{
+    font-size: medium;
+    color: $text2color;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .side_bar{border: none;}
+    .right_bar{border: none; border-top: 1px solid #C7D0DB;padding-top: 12px; margin-top: 12px; }
+    .Intro_desp{border-top: 1px solid #C7D0DB;padding-top: 12px; margin-top: 12px;}
+}
+
